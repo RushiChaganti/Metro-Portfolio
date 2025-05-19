@@ -1,0 +1,101 @@
+{
+  "name": "Rushi Chaganti",
+  "introduction": "Hello! I'm an AI/ML Engineer who enjoys automating tasks, building intelligent systems, and working on GenAI projects.",
+  "about": "I'm an AI/ML Engineer with hands-on experience in GenAI, automation, and intelligent agent development. I specialize in Python and use tools like LangChain, Pinecone, Docker, and Selenium to build scalable and efficient solutions. I am passionate about open-source, fast prototyping, and deploying user-focused tools.",
+  "skills": [
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "Selenium",
+    "Playwright",
+    "LangChain",
+    "Pinecone",
+    "Docker",
+    "Git",
+    "Bash",
+    "Machine Learning",
+    "Neural Networks",
+    "Gen AI",
+    "AI-driven Automation",
+    "AI Agents",
+    "Data Preprocessing",
+    "Model Development"
+  ],
+  "operatingSystems": [
+    "Linux",
+    "Windows",
+    "macOS"
+  ],
+  "projects": [
+    {
+      "title": "arAIse_Web",
+      "description": "arAIse_Web is a platform to showcase our projects and help users easily access and understand how to use our tools and applications.",
+      "githubUrl": "https://araise25.github.io/arAIse_Web/",
+      "deployedUrl": "https://araise25.github.io/arAIse_Web/"
+    },
+    {
+      "title": "Ketsu Check",
+      "description": "Developed a password strength tester using machine learning, achieving over 90% accuracy. Dockerized the app and deployed it using Streamlit.",
+      "githubUrl": "https://github.com/RushiChaganti/KetsuCheck"
+    },
+    {
+      "title": "DocuTalk",
+      "description": "A Streamlit app to upload and query PDF, DOCX, PPTX files using LangChain and Ollama. Features embedding generation, query processing, and CSV data plotting.",
+      "githubUrl": "https://github.com/RushiChaganti/DocuTalk"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Gumbel AI",
+      "period": "03/2025 – 04/2025",
+      "description": "Tested and evaluated multiple RAG systems. Developed models using RAFT, Light RAG, and Graph RAG to improve retrieval-augmented generation performance."
+    },
+    {
+      "company": "Refeso",
+      "period": "10/2024 – 02/2025",
+      "description": "Developed Selenium and Playwright automations to streamline Workday and Workable systems. Built browser agents to enhance operational efficiency."
+    },
+    {
+      "company": "Say Apps",
+      "period": "10/2024 – 02/2025",
+      "description": "Built a ChatGPT-powered Telegram bot for YouTube transcript summarization. Scraped and generated content from X and LinkedIn using Selenium. Optimized RAG with Pinecone."
+    }
+  ],
+  "openSourceContributions": [
+    {
+      "title": "AI Hawk",
+      "description": "Added zip code functionality and resolved issues. Assisted users in setup and development.",
+      "githubUrl": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk"
+    },
+    {
+      "title": "Light RAG",
+      "description": "Implemented export functionality for entities, relations, and data in multiple formats.",
+      "githubUrl": "https://github.com/HKUDS/LightRAG"
+    }
+  ],
+  "hobbies": [
+    "Watching anime",
+    "Playing chess",
+    "Hiking"
+  ],
+  "contact": {
+    "email": "rushichaganti@gmail.com",
+    "phone": "7013915283",
+    "location": "India",
+    "social": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/RushiChaganti"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rushichaganti/"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/Rushichaganti"
+      }
+    ]
+  }
+}

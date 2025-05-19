@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: var(--font-segoe), "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Windows Metro UI specific styles */
+.rounded-md {
+  border-radius: 0; /* Metro UI uses square tiles */
+}
+
+/* Improve font rendering */
+h1,
+h2,
+h3,
+p {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
