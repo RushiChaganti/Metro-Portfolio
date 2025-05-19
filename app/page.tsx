@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { getImagePath } from "@/lib/utils";
 
 import { useState, useEffect, useRef } from "react"
 import { useLocalStorage } from "@/hooks/use-local-storage"
@@ -384,7 +385,7 @@ export default function Home() {
                   if (localSkillIcons[skillLower]) {
                     return (
                       <img
-                        src={localSkillIcons[skillLower] || "/placeholder.svg"}
+                        src={getImagePath(localSkillIcons[skillLower] || "/placeholder.svg")}
                         alt={skill}
                         className="h-6 w-6 invert"
                       />
@@ -1467,9 +1468,9 @@ export default function Home() {
           activeTile === "resume" ? "ring-4 ring-white" : ""
         } ${getTileSizeClasses("resume")}`}
         onClick={() => {
-          // Use window.open with the correct path to your resume PDF
-          window.open("/Rushi_chaganti.pdf", "_blank")
+          window.open(getImagePath("/Rushi_chaganti.pdf"), "_blank")
         }}
+        
         style={{ backgroundColor: tileColors["resume"], opacity: tileOpacity }}
         onMouseEnter={() => setActiveTile("resume")}
         onMouseLeave={() => setActiveTile(null)}
