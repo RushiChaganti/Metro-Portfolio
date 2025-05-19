@@ -5,6 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { Trophy, X, Swords } from "lucide-react"
 import Image from "next/image"
+import { getImagePath } from "@/lib/utils";
 
 interface ChessGame {
   url: string
@@ -210,7 +211,7 @@ const ChessTile: React.FC<ChessTileProps> = ({ username }) => {
           <div className="flex justify-between items-center mb-6">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 relative">
-                <Image src="/icons/chess.svg" alt="Chess" width={24} height={24} className="invert" />
+                <Image src={getImagePath("/icons/chess.svg")} alt="Chess" width={24} height={24} className="invert" />
               </div>
               <h2 className="text-2xl font-light">Recent Chess Games</h2>
             </div>

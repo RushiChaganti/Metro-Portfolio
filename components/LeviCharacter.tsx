@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { getImagePath } from "@/lib/utils";
 
 interface LeviCharacterProps {
   enabled: boolean
@@ -71,7 +72,7 @@ const LeviCharacter: React.FC<LeviCharacterProps> = ({ enabled }) => {
     >
       <div className="relative w-24 h-24">
         <Image
-          src="/levi-2d.png"  // Replace with actual path if needed
+          src={getImagePath("/levi-2d.png")}  // Replace with actual path if needed
           alt="Levi Ackerman Anime Style"
           fill
           style={{ objectFit: 'contain' }}

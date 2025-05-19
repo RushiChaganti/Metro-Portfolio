@@ -13,6 +13,7 @@ import {
   Cpu,
   Cloud
 } from "lucide-react"
+import { getImagePath } from "@/lib/utils";
 
 // Skill icon component props
 interface SkillsTileProps {
@@ -48,7 +49,7 @@ const SkillsTile: React.FC<SkillsTileProps> = ({ skills }) => {
     if (localSkillIcons[skillKey]) {
       return (
         <img 
-          src={localSkillIcons[skillKey]} 
+          src={getImagePath(localSkillIcons[skillKey])} 
           alt={skill} 
           className="h-8 w-8 invert" // Add invert class to make SVGs visible
         />
