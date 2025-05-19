@@ -286,7 +286,7 @@ const ChessTile: React.FC<ChessTileProps> = ({ username }) => {
     <div className="w-full h-full p-3 flex flex-col justify-between cursor-pointer" onClick={handleTileClick}>
       <div className="flex items-center">
         <div className="w-5 h-5 relative mr-2">
-          <Image src="/icons/chess.svg" alt="Chess" width={20} height={20} className="invert" />
+          <Image src={getImagePath("/icons/chess.svg")} alt="Chess" width={20} height={20} className="invert" />
         </div>
         <h2 className="text-lg font-light">Chess</h2>
       </div>
