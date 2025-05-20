@@ -955,36 +955,35 @@ export default function Home() {
               </div>
             )}
 
-            {/* Links section at the bottom */}
-            <div className="mt-auto pt-2 flex items-center space-x-3">
-              {/* GitHub link */}
-              {project.githubUrl && (
-                <Link
-                  href={project.githubUrl}
-                  className="text-white hover:text-gray-200 flex items-center"
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    window.open(project.githubUrl, "_blank")
-                  }}
-                >
-                  <Github className={`${isMobile ? "h-4 w-4" : "h-5 w-5"}`} />
-                </Link>
-              )}
+           {/* Links section at the bottom */}
+<div className="mt-auto pt-2 flex items-center space-x-3">
+  {/* GitHub link */}
+  {project.githubUrl && (
+    <button
+      className="text-white hover:text-gray-200 flex items-center"
+      onClick={(e) => {
+        e.stopPropagation()
+        window.open(project.githubUrl, "_blank")
+      }}
+    >
+      <Github className={`${isMobile ? "h-4 w-4" : "h-5 w-5"}`} />
+    </button>
+  )}
 
-              {/* Deployed link */}
-              {project.deployedUrl && (
-                <Link
-                  href={project.deployedUrl}
-                  className="text-white hover:text-gray-200 flex items-center"
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    window.open(project.deployedUrl, "_blank")
-                  }}
-                >
-                  <Globe className={`${isMobile ? "h-4 w-4" : "h-5 w-5"} mr-1`} />
-                </Link>
-              )}
-            </div>
+  {/* Deployed link */}
+  {project.deployedUrl && (
+    <button
+      className="text-white hover:text-gray-200 flex items-center"
+      onClick={(e) => {
+        e.stopPropagation()
+        window.open(project.deployedUrl, "_blank")
+      }}
+    >
+      <Globe className={`${isMobile ? "h-4 w-4" : "h-5 w-5"} mr-1`} />
+    </button>
+  )}
+</div>
+
           </div>
         </div>,
       )
