@@ -26,7 +26,7 @@ const OperatingSystemsTile: React.FC<OperatingSystemsTileProps> = ({ operatingSy
         </div>
       )
     }
-    if (osLower.includes("linux") || osLower.includes("ubuntu") || osLower.includes("debian")) {
+    if (osLower.includes("arch") || osLower.includes("ubuntu") || osLower.includes("debian")) {
       return (
         <div className="w-8 h-8 relative">
           <Image src={getImagePath("/icons/arch.svg")} alt="Linux" width={32} height={32} className="invert" />
