@@ -16,6 +16,6 @@ export function cn(...inputs: ClassValue[]) {
  * @returns The complete path including base path when in production
  */
 export const getImagePath = (path: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/github_Portfolio' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/Metro-Portfolio' : '';
   return `${basePath}${path}`;
 };
